@@ -1,0 +1,5 @@
+RewriteEngine On
+RewriteBase /ebanx/
+
+# Redireciona qualquer caminho que comece com /api para public/index.php
+RewriteRule ^api(/.*)?$ public/index.php [QSA,L]
